@@ -8,3 +8,36 @@ expressweb> nodemon src/app.js
 
 C:\Users\ShaikRaziyaSultana\Desktop\Practice\NodeJs\Node-JS\
 expressweb> nodemon src/app.js -e js,hbs ---> to reflect changes from hbs
+
+TO WORK WITH SSH KEY IN GIT HUB
+------------------------------------
+$ ls ~/.raziya_ssh
+raziya_ssh  raziya_ssh.pub
+
+$ eval $(ssh-agent -s)
+Agent pid 295
+
+$ ssh-add  ~/.raziya_ssh/raziya_ssh
+Enter passphrase for /c/Users/ShaikRaziyaSultana/.raziya_ssh/raziya_ssh: 786786
+Identity added: /c/Users/ShaikRaziyaSultana/.raziya_ssh/raziya_ssh (raziyasultana1997@gmail.com)
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+
+$ cat ~/.raziya_ssh/raziya_ssh.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCwxjwsOXGQrYdqmb2ZknLwFMX7QQtZic+2Fl61Ft/XkYnZxEoigM5yfZOjd/dD4fjfHklpT8LEFEQRMMtnAmnN/KYJIVCf3uL0xF+X70ieLCyOJZKhpSy7Pl+DYkVQz+BE540B2IA7Z8Ut+vfPb94NS3an3FU+AdSQV2fgHt6ULvVhK9vtZydv+dBjZbXHQ8pssTQEs7elz1qjMacNl0brWqTLmxEHa50E5S22vO0jIxTtyApcLfU7RxBwqnPf0mvV1GMq7BTB5MabGoa3TlTiYQe1+2HebzLMakhQoWXjTBkP/3NpiKYDAZQVuceuRaSh6BnldilevCuM1pdIxQJO9siDhsaG4mxGjMNH8mQUts3QhnpT4dDJloEhstn2K6K+43vMQL8HRky6rUusUg6MURu4mP74TytkgsJ9qMZnsdzBsyQe+HvnK3U8ZRb2BF08PlkEdeG3w5zUDWl/82nSistuamy374+InQqGnMnebMnx50ZLphC+3HuUdoc0vSsxuKWPl038ma1NtOEo05bXZO2O2uVYvOQfYsU05M32WyBaSxvk7W7IW9KZBv/iDWKWmCl0w5579ibyZIDeAMuDlYtxjw7CHIi5zU7FONqk2oZLw+5ebiQ4ChmPTEmef8YNF6+tO8T5Y28N/+JVNFr8ErLqoaTlfg2sBNfgkZ5+mw== raziyasultana1997@gmail.com
+
+
+$ssh -T git@github.com
+The authenticity of host 'github.com (13.234.210.38)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.        
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+yes
+Warning: Permanently added 'github.com,13.234.210.38' (ECDSA) to the list of known hosts.
+Connection reset by 13.234.210.38 port 22
+
+oON GIT BASH-----
+---------
+$ ssh -T git@github.com
+Hi RaziyaSultana! You've successfully authenticated, but GitHub does not provide shell access.
+
