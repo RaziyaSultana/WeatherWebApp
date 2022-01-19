@@ -1,0 +1,10 @@
+https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp
+https://www.flaticon.com/search?word=weather&type=icon --  icon
+https://getbootstrap.com/docs/4.0/components/navbar/ -- navbar
+https://fontawesome.com/v5.15/icons/snowflake?style=solid- fontawesome
+
+C:\Users\ShaikRaziyaSultana\Desktop\Practice\NodeJs\Node-JS\
+expressweb> nodemon src/app.js  
+
+C:\Users\ShaikRaziyaSultana\Desktop\Practice\NodeJs\Node-JS\
+expressweb> nodemon src/app.js -e js,hbs ---> to reflect changes from hbs

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ {{>headerlinks}}
+</head>
+
+<body>
+   {{>nav}}
+  <!-- Main HEADER -->
+  <div class="container-fluid main_header">
+    <div class="row">
+      <div class="col-md-10 col-12 mx-auto">
+        <div class="row">
+          <!-- left side div -->
+          <div class="col-md-12 col-12 main_header_left align-items-center">
+            <!-- https://getbootstrap.com/docs/4.0/components/carousel/ -->
+          <figure class="errimg">
+              <img src="images/404page.png" alt="techie" class="img-fluid" title="Techiee About">
+          </figure>
+         
+             <p>Welcome to Weather app</p>
+            <h1>{{errorMsg}}</h1>
+            <a href="/"><button>Go Back</button></a>
+          </div>
+          <!-- right side div -->
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- footer -->
+{{>footer}}
+</body>
+
+</html>
+
+
